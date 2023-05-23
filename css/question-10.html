@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 20px;
+        width: 100vw;
+        background: #c4ebf9;
+        color: white;
+        font-size: 26px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      header {
+        padding: 40px 30px;
+        width: 100%;
+        text-align: center;
+        background: #03bfb1;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        gap: 30px;
+      }
+      aside {
+        margin-top: 30px;
+        width: 40%;
+        height: 75vh;
+        background: #6edc6d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      article {
+        padding: 20px;
+        margin-top: 30px;
+        width: 100%;
+        height: 75vh;
+        background: #fbb04c;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .img-group {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+      }
+      .img {
+        width: 300px;
+        height: 300px;
+        background: #fcd249;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h3>Header</h3></header>
+    <div class="row">
+      <aside><h3>Aside</h3></aside>
+      <article>
+        <h3>Article</h3>
+        <div class="img-group">
+          <div class="img">Image</div>
+          <div class="img">Image</div>
+          <div class="img">Image</div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
