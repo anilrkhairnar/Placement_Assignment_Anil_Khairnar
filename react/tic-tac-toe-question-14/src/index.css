@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.board {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #e0e0e0;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+}
